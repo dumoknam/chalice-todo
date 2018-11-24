@@ -11,7 +11,6 @@ _SECRET = b'\xf7\xb6k\xabP\xce\xc1\xaf\xad\x86\xcf\x84\x02\x80\xa0\xe0'
 
 
 def get_jwt_token(username, password, record):
-    print('record', record)
     actual = hashlib.pbkdf2_hmac(
         record['hash'],
         password.encode('utf-8'),

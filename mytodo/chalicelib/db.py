@@ -77,7 +77,7 @@ class DynamoDBTodo(TodoDB):
         response = self._table.query(
             KeyConditionExpression=Key('username').eq(username)
         )
-        return reponse['Items']
+        return response['Items']
     
     def add_item(self, description, metadata=None, username=DEFAULT_USERNAME):
         uid = str(uuid4())
