@@ -130,3 +130,6 @@ dmypy.json
 
 # Chalice
 .chalice
+packaged/
+
+.DS_Store
